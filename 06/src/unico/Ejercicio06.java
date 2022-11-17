@@ -13,18 +13,18 @@ public class Ejercicio06 {
 	String mensaje;
 	
 	num = Util.leerInt("Introduzca un número: ");
-	resultado = esPrimo (num);
+	resultado = esPrimo(num);
 	
 	mensaje = resultado ? PRIMO : NOPRIMO;
 	Util.escribir(mensaje);
 		
 	}
 	
-	static public boolean esPrimo (int n) {
+	public static boolean esPrimo (int n) {
 
 		boolean esPrimo = true;
 		
-		for (int i = 2; 2 <n; i++) {
+		for (int i = 2; n <n; i++) {
 			if (n%i == 0) {
 				esPrimo = false;
 			}
